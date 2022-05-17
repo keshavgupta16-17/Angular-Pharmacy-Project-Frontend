@@ -1,0 +1,23 @@
+*{color:rgb(174, 158, 158);}
+.bg
+{
+   background: url('https://cdn.pixabay.com/photo/2016/07/24/21/01/thermometer-1539191_960_720.jpg') no-repeat; 
+   width: 100%;
+    height: 100%;
+    /* background-image: url('doggo.jpg'); */
+    /* background-size: 100% 100%; */
+    object-fit: cover;
+    background-size: 100% auto;
+    /* border: 2px solid #e9385a; */
+}
+
+.form-container
+{
+    border: 0px solid rgb(17, 5, 5);
+    padding: 50px 60px;
+    margin-top: 20vh;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+
+}

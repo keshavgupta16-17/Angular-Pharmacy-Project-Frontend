@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Medicine List</h3>
+  </div>
+  <div class="card-body">
+   <!-- <h5 class="card-title">This is product list page</h5>-->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Medicine Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Manufacturer</th>
+          <th scope="col">Price</th>
+          <th scope="col" colspan="2">Action</th>
+          <th scope="col">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <th scope="row">{{product.productId}}</th>
+          <td>{{product.productName}}</td>
+          <td>{{product.category.name}}</td>
+          <td>{{product.manufacturer}}</td>
+          <td>{{product.price}}</td>
+          <td><button class="btn btn-primary" [routerLink]="['/admin-dashboard','update-medicine',product.productId]">Update</button></td>
+          <td><button class="btn btn-primary" [routerLink]="['/admin-dashboard','delete-medicine',product.productId]">Delete</button></td>
+        </tr>
+            
+      </tbody>   
+    </table>
+  </div>
+</div>

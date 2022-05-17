@@ -1,0 +1,58 @@
+<!--div class="card">
+  <div class="card-header">
+    <h3>Contact Component</h3>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">This is a contact us component</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+
+</div>
+-->
+
+<div class="container">
+  <h1>Get In Touch</h1>
+  <form #userForm = "ngForm" novalidate (ngSubmit)="onSubmit()">
+      <!--
+      Userform values: {{userForm.value | json}} <br/>
+
+      User object values: {{user.name}} | {{user.email}} | {{user.phone}} | {{user.topic}} | {{user.timePreference}} | {{user.subscribe}} 
+      -->
+      <div class="form-group">
+          <label>Name</label>
+          <input type="text" name="name" #name="ngModel" class="form-control" 
+                  [class.is-invalid]="name.touched && name.invalid && (!userForm.submitted)" required [(ngModel)]="contact.name">
+          <small class="text-danger" [class.d-none]="name.untouched || name.valid || userForm.submitted">Name is required</small>
+      </div>
+     
+
+      <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" #email="ngModel" class="form-control" 
+          [class.is-invalid]="email.touched && email.invalid && (!userForm.submitted)" required [(ngModel)]="contact.email">
+          <small class="text-danger" [class.d-none]="email.untouched || email.valid || userForm.submitted">Email is required</small>
+      </div>
+
+
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" name="subject" #subject="ngModel" class="form-control" 
+        [class.is-invalid]="subject.touched && subject.invalid && (!userForm.submitted)" required [(ngModel)]="contact.subject">
+        <small class="text-danger" [class.d-none]="subject.untouched || subject.valid || userForm.submitted">Subject is required</small>
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+      <input type="text" name="message" #message="ngModel" class="form-control" 
+      [class.is-invalid]="message.touched && message.invalid && (!userForm.submitted)" required [(ngModel)]="contact.message">
+      <small class="text-danger" [class.d-none]="message.untouched || message.valid || userForm.submitted">Message is required</small>
+  </div>
+
+      <button class="btn btn-primary" type="submit" [disabled]="userForm.invalid">Send a Message</button>
+
+
+  </form>
+</div>
+
+

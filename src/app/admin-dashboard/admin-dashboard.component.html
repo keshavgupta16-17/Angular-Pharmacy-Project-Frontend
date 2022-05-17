@@ -1,0 +1,33 @@
+
+<div class="card">
+    <div class="card-header">
+        <h3>Welcome Admin!!</h3>
+    </div>
+    <div class="card-body">
+      <a class="btn btn-primary mx-2" [routerLink]="'add-medicine'" >Add Medicine</a>
+        <a class="btn btn-primary mx-2" [routerLink]="'view-medicine'" >View Medicine</a>
+        <!--<a class="btn btn-primary mx-2" [routerLink]="'update'" >Update Product</a>-->
+        <!--<a class="btn btn-primary mx-2" [routerLink]="'delete-medicine'" >Delete Medicine</a>-->
+        <a class="btn btn-primary mx-2" [routerLink]="'add-category'" >Add Category</a>
+        <a class="btn btn-primary mx-2" [routerLink]="'viewall-category'" >View Category</a>
+        <!--<a class="btn btn-primary mx-2" [routerLink]="'delete-category'" >Delete Category</a>-->
+        <a class="btn btn-primary mx-2" [routerLink]="'home'" >LogOut</a>
+      
+    </div>
+  
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="mt-3">
+            <router-outlet></router-outlet>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  </div>
+  
