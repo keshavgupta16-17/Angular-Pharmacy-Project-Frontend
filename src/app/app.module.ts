@@ -26,6 +26,7 @@ import { ViewallCategoryComponent } from './admin-dashboard/viewall-category/vie
 import { DeleteCategoryComponent } from './admin-dashboard/delete-category/delete-category.component';
 import { UpdateCategoryComponent } from './admin-dashboard/update-category/update-category.component';
 import { UpdateMedicineComponent } from './admin-dashboard/update-medicine/update-medicine.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { UpdateMedicineComponent } from './admin-dashboard/update-medicine/updat
     ViewallCategoryComponent,
     DeleteCategoryComponent,
     UpdateCategoryComponent,
-    UpdateMedicineComponent
+    UpdateMedicineComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

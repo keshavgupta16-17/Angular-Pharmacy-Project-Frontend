@@ -21,6 +21,7 @@ import { ViewallCategoryComponent } from './admin-dashboard/viewall-category/vie
 import { DeleteCategoryComponent } from './admin-dashboard/delete-category/delete-category.component';
 import { UpdateCategoryComponent } from './admin-dashboard/update-category/update-category.component';
 import { UpdateMedicineComponent } from './admin-dashboard/update-medicine/update-medicine.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: 'registration', component: RegistrationComponent},
   {path: 'home/login', component: LoginComponent },
   {path: 'home/registration', component: RegistrationComponent},
+  {path: 'cart',component: CartComponent},
   /*{path:'admin-dashboard', component: AdminDashboardComponent},
   {path: 'admin-dashboard/add-medicine', component: AddMedicineComponent},
   {path: 'admin-dashboard/view-medicine', component: ViewMedicineComponent},
