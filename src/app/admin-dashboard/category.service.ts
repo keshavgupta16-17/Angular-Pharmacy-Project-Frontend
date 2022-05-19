@@ -47,7 +47,7 @@ export class CategoryService {
   }
 
   deleteCategory(categoryId: number): Observable<boolean> {
-    let url = "http://localhost:9393/api/categories/category/"+categoryId;
+    let url = "http://localhost:9393/api/categories/"+categoryId;
     console.log(url);
     let returnVal: Observable<boolean> =  this._httpClient.delete<boolean>(url);  
     return returnVal; 

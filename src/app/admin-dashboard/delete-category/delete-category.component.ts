@@ -25,8 +25,10 @@ export class DeleteCategoryComponent implements OnInit {
         console.log(isDeleted);
         if(isDeleted) {
           this.message = "Category deleted successfully!!!"
+          //alert("Category deleted successfully!!!");
         } else {
           this.message = "Unknown error occured";
+          //alert("Unknown error occured");
         }
         this.router.navigateByUrl("/admin-dashboard/viewall-category");
       });

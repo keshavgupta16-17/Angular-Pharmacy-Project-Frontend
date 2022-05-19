@@ -42,8 +42,8 @@ export class LoginComponent implements OnInit {
 
   signUp()
   {
-    
-    this.route.navigate(['/register'])
+    this.route.navigateByUrl("/registration");
+    //this.route.navigate(['/register'])
   }
   
 }
